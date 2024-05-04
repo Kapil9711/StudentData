@@ -115,7 +115,10 @@ function hanldeInputClick() {
 }
 
 function hanldeInput() {
-  if (!this.value.length) feedData(tempStdData);
+  if (!this.value.length){
+    feedData(tempStdData);
+    secondTable.style.display = "none";
+  }
 }
 
 searchBtn.addEventListener("click", hanldeInputClick);
