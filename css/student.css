@@ -3,7 +3,9 @@
 }
 
 .search-btn {
-  padding-inline: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
 }
 
 .btn {
@@ -64,6 +66,6 @@
 
 @media (max-width: 550px) {
   .table-col {
-    margin-left: -11px;
+    margin-left: -5px;
   }
 }
