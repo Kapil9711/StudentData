@@ -86,9 +86,10 @@ sortBtns.forEach((btn) => {
 function hanldeInputClick() {
   const searchStr = searchInput.value.toLowerCase();
   filteredStdData = tempStdData.filter(
-    ({ first_name, last_name }) =>
+    ({ first_name, last_name,email }) =>
       first_name.toLowerCase().includes(searchStr) ||
-      last_name.toLowerCase().includes(searchStr)
+      last_name.toLowerCase().includes(searchStr) ||
+      email.toLowerCase().includes(searchStr)
   );
   feedData(filteredStdData);
 }
