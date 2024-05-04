@@ -94,7 +94,7 @@ function hanldeInputClick() {
 }
 
 function hanldeInput() {
-  if (!this.value.length) feedData(filteredStdData);
+  if (!this.value.length) feedData(tempStdData);
 }
 
 searchBtn.addEventListener("click", hanldeInputClick);
