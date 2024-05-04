@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/student.css" />
+    <script src="./scripts/bootstrap.bundle.min.js"></script>
+
+    <title>Student Data</title>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand">Student Portal</a>
+      </div>
+    </nav>
+
+    <main class="my-4">
+      <div class="container">
+        <!-- search input start -->
+        <div class="row d-flex gap-2 gap-md-0">
+          <div class="col-lg-10">
+            <input
+              type="text"
+              class="search-input form-control border-dark py-2"
+              placeholder="Search"
+            />
+          </div>
+          <div
+            class="col-lg-2 d-flex justify-content-center justify-content-lg-end"
+          >
+            <button type="button" class="btn btn-dark btn-lg search-btn">
+              Search
+            </button>
+          </div>
+        </div>
+        <!-- search input end -->
+
+        <!-- sort input start -->
+        <div class="row my-4">
+          <div
+            class="sort-col col d-flex justify-content-center justify-content-lg-between flex-wrap gap-sm-3"
+          >
+            <button id="a-z" type="button" class="sort-btn btn btn-dark btn-lg">
+              Sort A<i class="fa-solid fa-arrow-right"></i>Z
+            </button>
+            <button id="z-a" type="button" class="sort-btn btn btn-dark btn-lg">
+              Sort Z<i class="fa-solid fa-arrow-right"></i>A
+            </button>
+            <button
+              id="marks"
+              type="button"
+              class="sort-btn btn btn-dark btn-lg"
+            >
+              Sort By Marks
+            </button>
+            <button
+              id="passing"
+              type="button"
+              class="sort-btn btn btn-dark btn-lg"
+            >
+              Sort By Passing
+            </button>
+            <button
+              id="class"
+              type="button"
+              class="sort-btn btn btn-dark btn-lg"
+            >
+              Sort By Class
+            </button>
+            <button
+              id="gender"
+              type="button"
+              class="sort-btn btn btn-dark btn-lg"
+            >
+              Sort By Gender
+            </button>
+          </div>
+        </div>
+        <!-- sort input end -->
+
+        <div class="row">
+          <div class="col-12 table-col">
+            <table class="table table-bordered table-light table-student">
+              <thead>
+                <tr>
+                  <th class="th text-center" scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Gender</th>
+                  <th scope="col">Class</th>
+                  <th scope="col">Marks</th>
+                  <th class="th" scope="col">Passing</th>
+                  <th class="th" scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody class="table-body"></tbody>
+            </table>
+          </div>
+          <!-- //second table -->
+          <div class="col table-col second-table my-5">
+            <h2 class="text-center">Female Table</h2>
+            <table class="table table-bordered table-light table-student">
+              <thead>
+                <tr>
+                  <th class="th text-center" scope="col">ID</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Gender</th>
+                  <th scope="col">Class</th>
+                  <th scope="col">Marks</th>
+                  <th class="th" scope="col">Passing</th>
+                  <th class="th" scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody class="second-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

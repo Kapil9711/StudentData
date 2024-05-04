@@ -1,0 +1,79 @@
+.form-control {
+  border-radius: 0;
+}
+
+.search-btn {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn {
+  width: 170px;
+}
+@media (max-width: 550px) {
+  .btn {
+    width: 170px;
+    gap: 1px;
+  }
+}
+
+@media (max-width: 550px) {
+  .sort-col {
+    gap: 3px;
+  }
+}
+
+.table-student {
+  border-color: black;
+}
+
+.td {
+  width: 150px;
+}
+@media (max-width: 550px) {
+  .td {
+    width: 100px;
+  }
+}
+
+@media (max-width: 550px) {
+  th {
+    width: fit-content;
+  }
+}
+
+.td-id {
+  text-align: center;
+}
+@media (max-width: 550px) {
+  .td-id {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .email {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .th {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .table-col {
+    margin-left: -3px;
+  }
+}
+
+.std-img {
+  border-radius: 100px;
+  height: 25px;
+  width: 25px;
+  border: 1px solid;
+  display: inline-block;
+  margin-right: 5px;
+}
