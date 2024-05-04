@@ -116,8 +116,9 @@ function hanldeInputClick() {
 
 function hanldeInput() {
   if (!this.value.length){
-    feedData(tempStdData);
     secondTable.style.display = "none";
+    feedData(tempStdData);
+    
   }
 }
 
